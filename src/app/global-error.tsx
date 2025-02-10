@@ -12,13 +12,13 @@ export default function GlobalError({
 }>) {
   return (
     <html lang="pt-BR" translate="no">
-      <body className="bg-background text-foreground flex min-h-screen flex-col items-center justify-center">
-        <h1 className="text-primary animate-pulse text-8xl font-bold">Erro</h1>
-        <p className="text-muted-foreground mt-4 text-lg">
-          Algo deu errado!
-        </p>
+      <body className="flex min-h-screen flex-col items-center justify-center bg-background text-foreground">
+        <h1 className="animate-pulse text-8xl font-bold text-primary">Erro</h1>
+        <p className="mt-4 text-lg text-muted-foreground">Algo deu errado!</p>
         <div className="mt-6">
-          <Button variant="outline" onClick={() => reset()}>Tentar novamente</Button>
+          <Button variant="outline" onClick={() => reset()}>
+            Tentar novamente
+          </Button>
         </div>
         <div className="mt-6">
           <Link href="/">

@@ -31,7 +31,7 @@
       "@/schemas/*": ["./src/core/schemas/*"],
       "@/interfaces/*": ["./src/core/interfaces/*"],
       "@/config/*": ["./src/core/config/*"],
-      "@/utils": ["./src/core/utils"],
+      "@/utils": ["./src/core/utils"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
