@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/components/*": ["./src/core/components/*"],
+      "@/components/atoms": ["./src/core/components/atoms"],
+      "@/components/molecules": ["./src/core/components/molecules"],
+      "@/components/organisms": ["./src/core/components/organisms"],
+      "@/components/templates": ["./src/core/components/templates"],
+      "@/lib/cn": ["./src/core/lib/cn"],
+      "@/lib": ["./src/core/lib"],
+      "@/components/ui/*": ["./src/core/components/ui/*"],
+      "@/hooks/*": ["./src/core/hooks/*"],
+      "@/schemas/*": ["./src/core/schemas/*"],
+      "@/interfaces/*": ["./src/core/interfaces/*"],
+      "@/config/*": ["./src/core/config/*"],
+      "@/utils": ["./src/core/utils"],
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
